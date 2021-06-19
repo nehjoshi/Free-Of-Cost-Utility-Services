@@ -46,21 +46,15 @@
     font-family: 'Staatliches', cursive;
     margin: 0px 5px;
 }
-.letter-f {
-    
-}
+
 .letter-o {
     color: #390791;
 }
-.letter-c {
-    
-}
+
 .letter-u {
     color: #390791;
 }
-.letter-s {
-    
-}
+
 .letter-text {
     position: relative;
     font-size: 2rem;
@@ -71,6 +65,9 @@
     height: 100vh;
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     scroll-snap-align: start;
+}
+.home-scroll:hover {
+    cursor: pointer;
 }
 @media screen and (max-width: 768px){
     .nav-heading {
