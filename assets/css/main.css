@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #673AB7;
+    border-radius: 5px;
+  }
+.scroll-class {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.nav {
+    position: fixed;
+    height: 60px;
+    background: #673AB7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100% !important;
+    box-shadow: 0 0 2px 2px rgb(66, 65, 65);
+    
+}
+.nav-heading, .nav-links{
+    color: #fff;
+}
+.nav-links {
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero {
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+
+}
+.letter {
+    font-size: 200px;
+    font-family: 'Staatliches', cursive;
+    margin: 0px 5px;
+}
+.letter-f {
+    
+}
+.letter-o {
+    color: #390791;
+}
+.letter-c {
+    
+}
+.letter-u {
+    color: #390791;
+}
+.letter-s {
+    
+}
+.letter-text {
+    position: relative;
+    font-size: 2rem;
+    top: -30px;
+    font-family: 'Nunito', sans-serif;
+}
+.page2 {
+    height: 100vh;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    scroll-snap-align: start;
+}
+@media screen and (max-width: 768px){
+    .nav-heading {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .nav-links {
+        display: none
+    }
+}
+@media screen and (max-width: 570px){
+    .letter {
+        font-size: 150px;
+    }
+}
