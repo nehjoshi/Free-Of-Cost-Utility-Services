@@ -83,3 +83,20 @@
         font-size: 150px;
     }
 }
+@media screen and (max-width: 460px){
+    .letter {
+        font-size: 100px;
+    }
+    .letter-text {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 350px){
+    .letter {
+        font-size: 50px;
+    }
+    .letter-text {
+        font-size: 1rem;
+        top: 0px;
+    }
+}
