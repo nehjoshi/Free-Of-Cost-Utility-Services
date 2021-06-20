@@ -6,6 +6,7 @@
 }
 ::-webkit-scrollbar {
   width: 10px;
+  z-index: 500;
 }
 ::-webkit-scrollbar-thumb {
     background: #673AB7;
@@ -63,11 +64,40 @@
 }
 .page2 {
     height: 100vh;
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 .home-scroll:hover {
     cursor: pointer;
+}
+.cat-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.cat-text {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+.cat-button {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    width: fit-content;
+    border: 2px solid #390791;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition-duration: 0.25s;
+    margin-top: 10px;
+}
+.cat-button:hover {
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #390791;
+    color: white; 
 }
 @media screen and (max-width: 768px){
     .nav-heading {
