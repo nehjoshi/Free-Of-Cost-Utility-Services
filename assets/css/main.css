@@ -141,6 +141,10 @@ body {
         width: 100%;
         font-size: 25px;
     }
+    .nav-button {
+        position: relative;
+        top: 3.5px;   
+    }
     .nav-button:hover {
         cursor: pointer;
     }
