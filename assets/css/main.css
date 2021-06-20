@@ -73,7 +73,7 @@ body {
 }
 .page2 {
     height: 100vh;
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -81,6 +81,9 @@ body {
     align-items: center;
     font-family: 'Nunito', sans-serif;
     width: 100%;
+}
+.home-scroll {
+    width: fit-content;
 }
 .home-scroll:hover {
     cursor: pointer;
@@ -117,6 +120,9 @@ body {
 .cat-img {
     height: 200px;
 }
+.editor {
+    height: 300px;
+}
 @media screen and (max-width: 768px){
     .nav-heading {
         text-align: center;
@@ -140,6 +146,9 @@ body {
     }
     .cat-img {
         height: 150px;
+    }
+    .editor {
+        height: 200px;
     }
 
 }
