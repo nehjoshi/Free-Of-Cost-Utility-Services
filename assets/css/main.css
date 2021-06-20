@@ -4,10 +4,15 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body {
+    overflow-x: hidden;
+}
 ::-webkit-scrollbar {
   width: 10px;
-  z-index: 500;
 }
+::-webkit-scrollbar-track {
+    background: #c1dfc4;
+  }
 ::-webkit-scrollbar-thumb {
     background: #673AB7;
     border-radius: 5px;
@@ -16,6 +21,7 @@
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    width: 100%;
 }
 .nav {
     position: fixed;
@@ -62,6 +68,9 @@
     top: -30px;
     font-family: 'Nunito', sans-serif;
 }
+.divider {
+    border: 2px solid #390791;
+}
 .page2 {
     height: 100vh;
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
@@ -71,12 +80,13 @@
     justify-content: center;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+    width: 100%;
 }
 .home-scroll:hover {
     cursor: pointer;
 }
 .cat-heading {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
     font-weight: 900;
 }
 .cat-text {
@@ -92,12 +102,20 @@
     border-radius: 10px;
     transition-duration: 0.25s;
     margin-top: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+       
 }
 .cat-button:hover {
     cursor: pointer;
     border: 2px solid transparent;
     background-color: #390791;
     color: white; 
+}
+.cat-img {
+    height: 200px;
 }
 @media screen and (max-width: 768px){
     .nav-heading {
@@ -120,13 +138,20 @@
     .letter-text {
         font-size: 1.25rem;
     }
+    .cat-img {
+        height: 150px;
+    }
+
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 380px){
     .letter {
         font-size: 50px;
     }
     .letter-text {
         font-size: 1rem;
         top: 0px;
+    }
+    .cat-img {
+        height: 100px;
     }
 }
