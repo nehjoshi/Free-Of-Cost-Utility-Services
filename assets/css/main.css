@@ -6,6 +6,10 @@
 }
 body {
     overflow-x: hidden;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -108,10 +112,7 @@ body {
     border-radius: 10px;
     transition-duration: 0.25s;
     margin-top: 10px;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
+
        
 }
 .cat-button:hover {
