@@ -32,11 +32,17 @@
                             style="text-decoration: none; color: #fff;">Categories</a></h4>
                 </div>
                 <div class="nav-expand-mobile ">
-                    <i class="fas fa-bars nav-button"></i>
+                    <i class="fas fa-bars nav-button" onclick="toggleNav()"></i>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div id="sidebar">
+        <i class="fas fa-times" onclick="toggleNav()"></i>
+        <h4 onclick="scrollToTop()" style="position: relative; bottom: 50px">Home</h4>
+        <h4 onclick="toggleNav()"><a href="#cats" style="text-decoration: none; color: #fff;">Categories</a></h4>
+    </div>
 
     <div class="scroll-class" style="width: 100%">
 
@@ -69,14 +75,15 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p class="cat-text text-center  " style="color: #fff;">The best graphics designing and editing tools, for beginners,
+                    <p class="cat-text text-center  " style="color: #fff;">The best graphics designing and editing
+                        tools, for beginners,
                         professionals and veterans.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="cat-button mx-auto d-block" style="border-color: #fff">
-                        <span style="color: #fff;">View Graphics Apps</span>
+                        <span style="color: #fff;"><a href="./graphics.html" style="text-decoration: none; color: #fff;">View Graphics Apps</a></span>
                     </div>
                 </div>
             </div>
@@ -173,7 +180,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p class="cat-text text-center  " style="color: #fff;">Discover the hidden musician inside you with these top-notch music editing applications.</p>
+                    <p class="cat-text text-center  " style="color: #fff;">Discover the hidden musician inside you with
+                        these top-notch music editing applications.</p>
                 </div>
             </div>
             <div class="row">
@@ -194,19 +202,27 @@
         crossorigin="anonymous"></script>
     <script>
         const home = document.querySelector(".scroll-class");
-
+        const toggler = document.getElementById("sidebar");
+        console.log(toggler.style.display);
         const scrollToTop = () => {
             home.scrollTo({
                 top: 0,
                 behavior: "smooth"
-            })
+            });
+            toggler.style.display = "none";
         }
-        const scrollToCat = () => {
-            home.scrollTo({
-                top: 10,
-                behavior: "smooth"
-            })
+
+
+        const toggleNav = () => {
+
+            if (toggler.style.display === 'none') {
+                toggler.style.display = "flex";
+            }
+            else {
+                toggler.style.display = "none";
+            }
         }
+
     </script>
 </body>
 
