@@ -44,6 +44,9 @@ body {
 .nav-heading, .nav-links{
     color: #fff;
 }
+.nav-heading:hover {
+    cursor: pointer;
+}
 .nav-links {
     font-family: 'Nunito', sans-serif;
 }
@@ -236,7 +239,9 @@ body {
         display: block;
         color: white;
         position: absolute;
-        width: 100%;
+        width: 20%;
+        left: 20px;
+        top: 6px;
         font-size: 25px;
     }
     .nav-button {

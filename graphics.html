@@ -23,8 +23,7 @@
         <div class="container-fluid">
             <div class="row my-2 mx-1  ">
                 <div class="col-md-9 col-sm-12 ">
-                    <h2 class="nav-heading"><a href='./index.html'
-                            style="text-decoration: none; color: inherit">FOCUS</a></h2>
+                    <h2 class="nav-heading" onClick="goToHome()">FOCUS</h2>
                 </div>
                 <div class="col-md-1 my-2">
                     <h3 class="nav-links lead home-scroll" onclick="scrollToTop()">Home</h3>
@@ -33,10 +32,11 @@
                     <h4 class="nav-links lead home-scroll" onClick="scrollToCat()"><a href="#cats"
                             style="text-decoration: none; color: #fff;">Categories</a></h4>
                 </div>
-                <div class="nav-expand-mobile ">
-                    <i class="fas fa-bars nav-button" onclick="toggleNav()"></i>
-                </div>
+
             </div>
+        </div>
+        <div class="nav-expand-mobile ">
+            <i class="fas fa-bars nav-button" onclick="toggleNav()"></i>
         </div>
     </nav>
 
@@ -214,6 +214,9 @@
             else {
                 toggler.style.display = "none";
             }
+        }
+        const goToHome = () => {
+            window.location.href="/index.html";
         }
 
     </script>
