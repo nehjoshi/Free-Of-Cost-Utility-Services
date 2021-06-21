@@ -60,7 +60,11 @@ body {
     display: flex;
     align-items: center;
     scroll-snap-align: start;
-
+}
+#main-hero {
+    background: url('/assets/media/bg1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .letter {
     font-size: 200px;

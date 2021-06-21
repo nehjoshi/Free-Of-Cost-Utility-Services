@@ -47,14 +47,16 @@
 
     <div class="scroll-class" style="width: 100%">
 
-        <div class="container-fluid hero">
+        <div class="container-fluid hero" id="main-hero">
             <div class="row mx-auto">
                 <div class="col-12">
-                    <span class="letter letter-f">F</span>
-                    <span class="letter letter-o">O</span>
-                    <span class="letter letter-c">C</span>
-                    <span class="letter letter-u">U</span>
-                    <span class="letter letter-s">S</span>
+        
+                        <span class="letter letter-f" data-depth="0.3">F</span>
+                        <span class="letter letter-o" data-depth="0.3">O</span>
+                        <span class="letter letter-c" data-depth="0.3">C</span>
+                        <span class="letter letter-u" data-depth="0.3">U</span>
+                        <span class="letter letter-s" data-depth="0.3">S</span>
+                    
                     <p class="text-center letter-text">Free Of Cost Utility Store</p>
                     <hr class="divider">
                 </div>
@@ -84,7 +86,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="cat-button mx-auto d-block" style="border-color: #fff">
-                        <span style="color: #fff;"><a href="./graphics.html" style="text-decoration: none; color: #fff;">View Graphics Apps</a></span>
+                        <span style="color: #fff;"><a href="./graphics.html"
+                                style="text-decoration: none; color: #fff;">View Graphics Apps</a></span>
                     </div>
                 </div>
             </div>
@@ -110,7 +113,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="cat-button mx-auto d-block">
-                        <span><a href="./programming.html" style="text-decoration: none; color: inherit">View Programming Apps</a></span>
+                        <span><a href="./programming.html" style="text-decoration: none; color: inherit">View
+                                Programming Apps</a></span>
                     </div>
                 </div>
             </div>
@@ -201,7 +205,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+
     <script>
+
+
+
         const home = document.querySelector(".scroll-class");
         const toggler = document.getElementById("sidebar");
         console.log(toggler.style.display);
