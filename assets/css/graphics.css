@@ -9,7 +9,8 @@
     scroll-snap-align: start;
 }
 .graphics-heading {
-    font-size: clamp(1.2rem, 4vw, 4.5rem);
+    font-size: clamp(2.6rem, 4vw, 4.5rem);
+    text-align: center;
     font-weight: 900;
     color: rgb(214, 208, 208);
 }
