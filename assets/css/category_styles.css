@@ -49,7 +49,8 @@
 }
 .box:hover {
     cursor: pointer;
-    border: 3px solid #390791;;
+    border: 3px solid #390791;
+    background-color: rgb(226, 226, 226);
 }
 .box-img {
     height: 100px;
