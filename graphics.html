@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/graphics.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -45,17 +46,147 @@
         <h4 onclick="toggleNav()"><a href="#cats" style="text-decoration: none; color: #fff;">Categories</a></h4>
     </div>
 
-    <div class="scroll-class" style="width: 100%">
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    </div>
+
+
+        <div class="container-fluid graphics-hero">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="graphics-heading">Graphics Applications</h1>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid box-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="box">
+                            <img src="assets/media/blenderlogo.png" class="box-img">
+                            <h2>BLENDER</h2>
+                            <div class="box-row">
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="box">
+                            <img src="assets/media/inkscape.png" class="box-img">
+                            <h2>INKSCAPE</h2>
+                            <div class="box-row">
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png">
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/starblank.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="box">
+                            <img src="assets/media/gimplogo.png" class="box-img">
+                            <h2>GIMP</h2>
+                            <div class="box-row">
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/starblank.png" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="box">
+                            <img src="assets/media/pencil2d.png" class="box-img">
+                            <h2>PENCIL2D</h2>
+                            <div class="box-row">
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/starblank.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/starblank.png" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="box">
+                            <img src="assets/media/davinci.png" class="box-img">
+                            <h2>DAVINCI RESO...</h2>
+                            <div class="box-row">
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/star.png" >
+                                </div>
+                                <div class="box-star">
+                                    <img src="assets/media/starblank.png" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
 
 
 
@@ -67,7 +198,7 @@
         const toggler = document.getElementById("sidebar");
         console.log(toggler.style.display);
         const scrollToTop = () => {
-            home.scrollTo({
+            window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
