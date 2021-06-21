@@ -1,4 +1,4 @@
-.graphics-hero {
+.hero {
     font-family: "Nunito", sans-serif;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     background-image: linear-gradient(60deg, #29323c 0%, #37424d 100%);
     scroll-snap-align: start;
 }
-.graphics-heading {
+.heading {
     font-size: clamp(2.6rem, 4vw, 4.5rem);
     text-align: center;
     font-weight: 900;

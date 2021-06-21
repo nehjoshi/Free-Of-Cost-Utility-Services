@@ -44,6 +44,9 @@ body {
 .nav-heading, .nav-links{
     color: #fff;
 }
+.nav-heading {
+    width: fit-content;
+}
 .nav-heading:hover {
     cursor: pointer;
 }
@@ -230,6 +233,7 @@ body {
 @media screen and (max-width: 768px){
     .nav-heading {
         text-align: center;
+        margin: 0 auto;
         margin-top: 5px;
     }
     .nav-links {
