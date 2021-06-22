@@ -66,6 +66,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#graphics-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/media/bg_graphics.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#books-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/media/bg_books.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#coding-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/media/bg_coding.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quote-text {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    text-align: center;
+}
 .letter {
     font-size: 200px;
     font-family: 'Staatliches', cursive;

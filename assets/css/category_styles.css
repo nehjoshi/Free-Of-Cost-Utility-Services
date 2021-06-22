@@ -12,7 +12,7 @@
     font-size: clamp(2.6rem, 4vw, 4.5rem);
     text-align: center;
     font-weight: 900;
-    color: rgb(214, 208, 208);
+    color: rgb(255, 255, 255);
 }
 .box-container {
     display: flex;
