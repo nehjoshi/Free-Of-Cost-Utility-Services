@@ -254,7 +254,7 @@ body {
     font-size: 2rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1192px){
     .nav-heading {
         text-align: center;
         margin: 0 auto;
